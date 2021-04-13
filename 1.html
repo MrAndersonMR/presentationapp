@@ -81,7 +81,7 @@
       console.log(gltf.animations); //shows all animations imported into the dopesheet in blender
 
       mixer = new THREE.AnimationMixer(model);
-      mixer.clipAction(gltf.animations[1]).play();
+      mixer.clipAction(gltf.animations[0]).play();
 
       document.body.addEventListener("click", kill);
       function kill() {
